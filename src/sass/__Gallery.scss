@@ -1,0 +1,9 @@
+div.painel {
+   transform: translateX(-500%);
+   transition: 1s ease;
+
+   &.painel.show {
+      transform: translateX(0%);
+      transition: 1s ease;
+   }
+}

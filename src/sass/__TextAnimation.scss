@@ -1,0 +1,13 @@
+h1#container {
+   
+   .text {
+      position: relative;
+   }
+
+   .text.second-text {
+      color: $logo-primary;
+      span {
+         color: $bg-primmary;
+      }
+   }
+}

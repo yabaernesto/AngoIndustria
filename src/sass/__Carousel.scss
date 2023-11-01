@@ -1,0 +1,51 @@
+div.carousel-wrapper {
+   width: 100%;
+
+   div.carousel-container {
+      div.container-slider {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         width: 100%;
+         min-height: 100vh;
+         gap: 1rem;
+
+         div.container-images {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60%;
+
+            img {
+               width: 100%;
+               max-width: 180rem;
+               height: 50rem;
+               border-radius: .30rem;
+            }
+         }
+
+         .slider {
+            position: absolute;
+            width: 100%;
+         }
+
+         #prev-button, #next-button {
+            width: 5rem;
+            height: 5rem;
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+         }
+
+         #prev-button img, #next-button img {
+            width: 100%;
+            height: 100%;
+         }
+
+         #prev-button img {
+            margin-top: -2.5rem;
+         }
+      }
+   }
+}

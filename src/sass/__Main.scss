@@ -1,0 +1,80 @@
+main.main {
+   width: 100%;
+   margin-top: 5rem;
+   text-align: center;
+   
+   h2 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+   }
+
+   p.text-contet {
+      width: 90.25rem;
+      margin: 0 auto;
+      text-indent: 2rem;
+      text-align: justify;
+   }
+
+   div.box-services {
+      background: url(./../assets/img/banners/06.jpg);
+      background-position: center;
+      background-size: cover;
+      background-attachment: fixed;
+   }
+
+   div.box-container {
+      width: 100%;
+      background: linear-gradient(
+         to right,
+         rgba(255, 0, 204, 0.6),
+         rgba(51, 51, 153, 0.6)
+      );
+      padding: 1rem;
+
+      div.painel {
+         width: 80%;
+         background: rgba(0, 0, 0, 0.7);
+         margin: 0 auto;
+         margin-top: 1rem;
+         margin-bottom: 2rem;
+         padding: 1rem;
+         padding-right: 3rem;
+
+         text-align: center;
+         text-indent: 2rem;
+         text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+         letter-spacing: .10rem;
+
+         color: white;
+         border-radius: 1rem;
+      }
+      
+      img {
+         width: 100%;
+         max-width: 31.75rem;
+         height: 25rem;
+         object-fit: cover;
+
+         border-radius: .30rem;
+         border: 5px solid $bg-second;
+         padding: .45rem;
+
+         cursor: pointer;
+         transition: 700ms ease;
+      }
+
+      img:hover {
+         opacity: 0.7;
+      }
+
+      p {
+         margin-bottom: 2rem;
+      }
+
+      div.box {
+         display: grid;
+         grid-template-columns: repeat(3, 1fr);
+         grid-gap: 1rem;
+      }
+   }
+}

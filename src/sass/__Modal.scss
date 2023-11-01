@@ -1,0 +1,135 @@
+div.modal-wrapper {
+   visibility: hidden;
+   opacity: 0;
+}
+
+div.modal-wrapper.active {
+   visibility: visible;
+   opacity: 1;
+
+   transition: all 700ms ease;
+
+   width: 100vw;
+   height: 100vh;
+
+   position: absolute;
+   top: 0;
+   left: 0;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   background-color: rgba(0, 0, 0, 0.758);
+
+   div.modal {
+      padding: 1rem;
+      width: 35%;
+      position: relative;
+
+      border: 2px solid #209e40;
+      border-radius: 1rem;
+
+      background: linear-gradient(
+         to right,
+         rgba(255, 0, 204, 0.2),
+         rgba(51, 51, 153, 0.2)
+      );
+
+      h4 {
+         position: absolute;
+
+         top: 0;
+         right: 0;
+
+         margin: 2rem;
+         padding: 1rem 1.30rem;
+
+         color: white;
+         background-color: #209e40;
+
+         border-radius: 50%;
+         text-align: center;
+
+         cursor: pointer;
+      }
+
+      div.modal-box {
+         padding: 1rem;
+
+         h2 {
+            color: #209e40;
+            font-weight: bold;
+            font-size: 2rem;
+         }
+
+         form {
+            display: flex;
+            flex-direction: column;
+            margin-top: 3rem;
+
+            h5 {
+               color: #209e40;
+               transition: hover 1s ease;
+               cursor: pointer;
+               
+               &:hover {
+                  text-decoration: underline;
+               }
+            }
+
+            input {
+               padding: 1rem;
+               margin-bottom: 1rem;
+               outline: none;
+               border: 2px solid #209e40;
+               border-radius: 1rem;
+
+               &::placeholder {
+                  color: #209e40;
+               }
+            }
+
+            div.buttons {
+               display: flex;
+               justify-content: space-around;
+               margin-top: 2rem;
+
+               button {
+                  width: 100%;
+                  padding: 1rem;
+                  margin-bottom: 1rem;
+                  margin-left: 1rem;
+                  
+                  outline: none;
+                  cursor: pointer;
+
+                  border: 2px solid #209e40;
+                  border-radius: 1rem;
+
+                  color: white;
+                  background: linear-gradient(
+                     to right,
+                   rgba(255, 0, 204, 0.2),
+                   rgba(51, 51, 153, 0.2)
+                  );
+
+                  transition: hover 3s ease-in-out;
+                  
+                  &:first-child {
+                     margin-left: 0;
+                  }
+
+                  &:hover {
+                     background: linear-gradient(
+                        to right,
+                     rgba(255, 0, 204, 0.8),
+                     rgba(51, 51, 153, 0.8)
+                     );
+                  }
+               }
+            }
+         }
+      }
+   }
+}

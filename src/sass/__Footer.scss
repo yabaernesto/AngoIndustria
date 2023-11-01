@@ -1,0 +1,51 @@
+footer.footer {
+   width: 100%;
+   background: linear-gradient(
+      to right,
+      rgba(255, 0, 204, 0.6),
+      rgba(51, 51, 153, 0.6)
+   );
+   color: white;
+
+   div.footer-container {
+      width: 100%;
+      padding: 2rem;
+
+      background-color: rgba(0, 0, 0, 0.276);
+
+      div.footer-box {
+         display: flex;
+         justify-content: space-around;
+         align-items: center;
+
+         div.box-container {
+            h4 {
+               margin: 1rem 0;
+               margin-left: -2.5rem;
+               font-weight: bold;
+               cursor: pointer;
+
+               a {
+                  color: white;
+               }
+            }
+
+            nav.menu {
+               ul {
+                  list-style: none;
+                  li {
+                     margin-bottom: .50rem;
+
+                     transition: 700ms ease;
+                     cursor: pointer;
+                     &:hover {
+                        list-style: disc;
+                        color: #209e40;
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
+}

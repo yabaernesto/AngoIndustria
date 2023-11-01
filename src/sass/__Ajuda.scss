@@ -1,0 +1,47 @@
+div.ajuda {
+   width: 100%;
+
+   div.ajuda-box {
+      padding: 1rem;
+      margin-top: 5rem;
+
+      h2 {
+         color: #209e40ca;
+         margin-bottom: 1rem;
+      }
+
+      div.box-info-container {
+         display: grid;
+         grid-template-columns: repeat(3, 1fr);
+         gap: 1rem;
+         margin-bottom: 3rem;
+
+         div.box-image {
+            border: 2px solid #209e40ca;
+            border-radius: .40rem;
+
+            div.image {
+               width: 50%;
+               margin: 0 auto;
+
+               img {
+                  width: 100%;
+               }
+            }
+
+            div.info {
+               padding: 1rem;
+
+               h5 {
+                  font-size: 1.3rem;
+                  color: #209e40ca;
+               }
+
+               p {
+                  color: #a2a2a2;
+               }
+            }
+         }
+      }
+   }
+}

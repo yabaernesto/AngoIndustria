@@ -1,0 +1,169 @@
+div.contact {
+   width: 100%;
+   background: linear-gradient(
+      to right,
+      rgba(255, 0, 204, 0.6),
+      rgba(51, 51, 153, 0.6)
+   );
+
+   div.contact-container {
+      width: 100%;
+      background-color: #0000004e;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      div.contact-content {
+         width: 65%;
+         background-color: white;
+         
+         margin: 8rem 0;
+         padding: 1rem;
+
+         border: 2px solid #2ec354;
+         border-radius: 1rem;
+
+         position: relative;
+
+         div.box-form {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            margin: 5rem 0;
+            
+            div.icone {
+               i.icon-message {
+                  font-size: 25rem;
+                  color: #2ec354;
+                  cursor: pointer;
+               }
+            }
+
+            form {
+               width: 50%;
+               height: 40vh;
+
+               h3 {
+                  text-align: start;
+                  font-weight: bold;
+                  letter-spacing: .10rem;
+                  color: #2ec354;
+
+                  &:hover {
+                     font-size: 1.5rem;
+                  }
+               }
+
+               div.box-input {
+                  display: flex;
+                  flex-direction: column;
+                  padding: 1rem;
+
+                  div.user, div.email {
+                     display: flex;
+                     justify-content: center;
+                     align-items: center;
+                     margin-bottom: 1rem;
+                     
+                     padding: .30rem;
+                     
+                     border: 1px solid #2ec354;
+                     border-radius: 1rem;
+
+                     background: linear-gradient(
+                        to right,
+                      rgba(255, 0, 204, 0.6),
+                      rgba(51, 51, 153, 0.6)
+                     );
+
+                     i.icon-user, i.icon-message {
+                        color: #fff;
+                        margin-right: .40rem;
+                        margin-left: .20rem;
+                        margin-top: .20rem;
+                        font-size: 2rem;
+                        cursor: pointer;
+                     }
+                  }
+
+                  div.messageText {
+                     textarea {
+                        width: 100%;
+                        height: 8rem;
+
+                        outline: none;
+                        resize: none;
+
+                        padding: 1rem;
+
+                        border: 1px solid #2ec354;
+                        border-radius: 1rem;
+                        
+                        background: linear-gradient(
+                           to right,
+                         rgba(255, 0, 204, 0.6),
+                         rgba(51, 51, 153, 0.6)
+                        );
+
+                        &::placeholder {
+                           color: #ccc;
+                           font-weight: bold;
+                        }
+                     }
+                  }
+
+                  div.buttonSend {
+                     button {
+                        margin-top: 1rem;
+                        width: 100%;
+                        padding: 1rem .50rem;
+
+                        border: 2px solid #2ec354;
+                        border-radius: 1rem;
+                        
+                        background: linear-gradient(
+                           to right,
+                         rgba(255, 0, 204, 0.6),
+                         rgba(51, 51, 153, 0.6)
+                        );
+                        color: #fff;
+
+                        cursor: pointer;
+                        outline: none;
+                        transition: hover 3s ease;
+
+                        &:hover {                            
+                           background: linear-gradient(
+                              to right,
+                           rgba(255, 0, 204, 0.5),
+                           rgba(51, 51, 153, 0.5)
+                           );
+                        }
+                     }
+                  }
+                  
+                  div.user, div.email, div.messageText {
+                     input {
+                        width: 100%;
+                        padding: .35rem;
+                        margin-top: .45rem;
+                        outline: none;
+                        
+
+                        border: none;
+
+                        background: linear-gradient(
+                           to right,
+                         rgba(255, 0, 204, 0.0),
+                         rgba(51, 51, 153, 0.0)
+                        );
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
+}
